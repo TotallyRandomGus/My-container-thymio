@@ -4,7 +4,7 @@ from controller import Robot
 import sys
 
 # Define the target motor position in radians.
-target = 0
+target = 10
 
 # Get pointer to the robot.
 robot = Robot()
@@ -14,7 +14,7 @@ print("Move the motors of the Thymio II to position " + str(target) + ".")
 
 # Set the target position of the left and right wheels motors.
 robot.getDevice("motor.left").setPosition(target)
-robot.getDevice("motor.right").setPosition(target)
+robot.getDevice("motor.right").setPosition(target+2)
 
 # This is the most simple controller that works for this benchmark
 # If you want to experiment with more complex functions, you can read the programming guide here:
